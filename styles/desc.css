@@ -1,0 +1,36 @@
+#rp_down {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    padding: 20px;
+}
+
+.rp_title, .rp_date {
+    width: 100%;
+    height: 50px; /* Высота для title и date */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.rp_description {
+    width: 100%;
+    min-height: 80px; /* Минимальная высота для description */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff6c2f;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin-top: 10px;
+    color: #f0f0f0;
+}

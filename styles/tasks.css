@@ -1,0 +1,14 @@
+#tasksRow{
+    width: 100%;
+}
+
+#tasksRow td,#tasksRow th{
+    font-size: 20px;
+    padding: 20px 0;
+    text-align: center;
+    width: 33.33%;
+    font-weight: normal;
+}
+.checkboxID{
+    width: 50px;
+}

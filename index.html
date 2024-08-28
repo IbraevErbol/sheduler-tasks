@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/new.css">
+    <link rel="stylesheet" href="styles/tasks.css">
+    <link rel="stylesheet" href="styles/desc.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="left_page">
+            <div class="title_hd">
+                Task Scheduler
+            </div>
+
+            <div class="container_tasks">
+                <table id="tasksRow">
+                </table>
+            </div>
+        </div>
+        <div class="right_page">
+            <div class="rp_up">
+                <div class="info_person">
+                    <div class="icon_client">
+                        <img src="images/icons8-пользователь-90.png" alt="">
+                    </div> 
+                    <div class="full_name">
+                        <p>Task overview: total and completed</p>
+                    </div>   
+                    <div class="status_tasks">
+                        <table>
+                            <tr>
+                                <td>All</td>
+                                <td>Completed</td>
+                                <!-- <td>Incomplete</td> -->
+                            </tr>
+                            <tr>
+                                <td class="allLen">0</td>
+                                <td class="allComp">0</td>
+                                <!-- <td class="allInComp">0</td> -->
+                            </tr>
+                        </table>
+                    </div>  
+                    <div class="div_btn">
+                        <div class="btn_del">D. All</div>
+                        <div class="btn_sel">D. Sel</div>
+                        <div class="btn_new">New</div>
+                    </div>
+                </div>
+            </div>
+            <div class="rp_down">
+
+            </div>
+        </div>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close_btn">&times;</span>
+                <form class="form_task">
+                    <h1>Record</h1>
+                    <input type="text" id="title" name="title" placeholder="Title">
+                    <input type="datetime-local" id="date" name="date" placeholder="Date or Text">
+                    <textarea name="description" id="description"  placeholder="Description"></textarea>
+                    <button type="submit">Отправить</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="overlay" class="overlay"></div>
+    </div>
+    <script type="module" src="structureLogic/RightUp.js"></script>
+
+    <!-- ----------- roots -------------- -->
+    
+</body>
+</html>
